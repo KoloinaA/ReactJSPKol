@@ -1,0 +1,179 @@
+.titre{
+  /* background-color: #A7AABC; */
+  font-size: 50px;
+  padding: 20px;
+  color: #07224A;
+}
+.listeMain{
+  grid-area: 'listeMain';
+  margin-left: 10px;
+}
+.reste{
+  grid-area: 'reste';
+  width: 100px;
+}
+.AppMain{
+  display: grid;
+  grid-template-columns: '80% 20%';
+  grid-template-areas: 'listeMain reste';
+}
+.modiform {
+  display: none;
+}
+.addform{
+  display: none; 
+}
+.boutonAjout{
+  float:right;
+  padding: 5px;
+  width: 40px;
+  margin-top: -70px;
+  margin-right: 100px;
+}
+.deleteButton{
+  margin-right: -30px;
+  margin-left: 15px;
+  width: 32px;
+}
+/* Style the table itself */
+table {
+  width: 100%; /* Makes the table occupy full width */
+  border-collapse: collapse; /* Removes spacing between borders */
+}
+
+/* Style the table header (TH) */
+th {
+  background-color: #e0e0e0; /* Light gray background for headers */
+  padding: 10px; /* Padding for header cells */
+  border: 1px solid #dddddd; /* Thin border for headers */
+  text-align: left; /* Left-align header content */
+  font-weight: bold; /* Bold text for headers */
+}
+
+/* Style the table body (TD) */
+td {
+  padding: 10px; /* Padding for table body cells */
+  border: 1px solid #dddddd; /* Thin border for table body cells */
+  text-align: left; /* Left-align body content */
+}
+
+/* Alternate row colors for a subtle zebra stripe effect */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Hover effect for a bit of interactivity */
+tr:hover {
+  background-color: #dddddd; /* Light gray background on hover */
+}
+.DataList{
+  display: flex;
+  flex-direction: column;
+}
+.box{
+  margin-left: 10px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin-top: 10px;
+  background-color: #e0e0e0;
+}
+.A{color: #e00a0a;}
+.B{color: #eba90f;}
+.C{color: #ff6f37;}
+.prixLegende{
+font-weight: bold;
+font-size: 10px;
+color: black;
+}
+.prix{
+font-weight: bold;
+text-align: center;
+
+}
+.diagram{
+  margin-top: 20px;
+}
+.modiform, .addform{
+  /* Overall styling for the modal form container */
+  position: fixed; /* Positions the form as a modal overlay */
+  top: 0;
+  left: 0;
+  width: 100%; /* Stretches to cover the entire viewport */
+  height: 100%; /* Stretches to cover the entire viewport height */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  display: flex; /* Allows centering of content */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  z-index: 10; /* Ensures the modal form is displayed on top of other elements */
+}
+
+.modiform.hidden, .addform.hidden {
+  /* Hides the modal form when the class is added */
+  display: none;
+}
+
+#closeIcon {
+  /* Styles for the close icon */
+  position: absolute; /* Positions the icon absolutely within the modal */
+  top: 10px; /* Adjust positioning as needed */
+  right: 10px; /* Adjust positioning as needed */
+  cursor: pointer; /* Indicates interactivity on hover */
+}
+form {
+  /* Overall form styling */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px; /* Adjust as needed */
+  margin: 200px auto; /* Center the form */
+  background-color: #ccc;
+}
+/* .addform form{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px; 
+  margin: 200px auto; 
+  background-color: #ccc;
+} */
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="hidden"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+.buttonSubmit {
+  /* Button styling */
+  background-color: #30a7e7; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttonSubmit:hover {
+  background-color: #298dcc; /* Darker blue on hover */
+}
+.diagramme{
+  background-color: #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  margin-left: 60px;
+}
